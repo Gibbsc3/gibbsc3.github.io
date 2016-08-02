@@ -43,8 +43,8 @@ fetch('https://5f36d607.ngrok.io/photos')
   .then(function(data) {
     return data.json()
   })
-  .then(function(data) {
-    console.log(data.image);
+  .then(function(photos) {
+    console.log(photos.image);
     // renderPhoto(photos)
     // Put your code here to render existing photos
 
