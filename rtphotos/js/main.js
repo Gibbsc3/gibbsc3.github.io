@@ -11,6 +11,7 @@ pusher = new Pusher(apiToken, {
 channel = pusher.subscribe('email_image')
 channel.bind('image_upload', function(data) {
 
+console.log(data.image);
 renderPhoto(data)
   // Put your code here to render incoming photos
 })
@@ -35,7 +36,6 @@ function renderPhoto(fake) {
 
   div.appendChild(img)
   document.body.appendChild(div);
-console.log(fake);
 }
 // renderPhoto(fakePhotos)
 fetch('https://5f36d607.ngrok.io/photos')
