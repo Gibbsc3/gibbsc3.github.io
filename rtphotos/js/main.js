@@ -11,8 +11,6 @@ var pusher,
       //creates div
       var div = document.createElement('div')
       div.classList.add('foo')
-
-
       div.appendChild(img)
       document.body.appendChild(div);
     }
@@ -26,7 +24,7 @@ channel = pusher.subscribe('email_image')
 channel.bind('image_upload', function(data) {
 
 console.log(data.image);
-renderPhoto(data)
+// renderPhoto(data)
   // Put your code here to render incoming photos
 })
 
@@ -47,7 +45,7 @@ fetch('https://5f36d607.ngrok.io/photos')
   })
   .then(function(photos) {
     console.log(photos.image);
-    renderPhoto(photos)
+    // renderPhoto(photos)
     // Put your code here to render existing photos
 
   })
