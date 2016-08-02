@@ -27,6 +27,7 @@ renderPhoto(data)
 
 function renderPhoto(fake) {
   //creates image tag
+  console.log(fake.image);
   var img = document.createElement('img')
   img.setAttribute('src', 'https://5f36d607.ngrok.io/photos' + fake.image)
   //creates div
