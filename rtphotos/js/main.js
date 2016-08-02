@@ -39,7 +39,7 @@ function renderPhoto(fake) {
 console.log(fake);
 }
 // renderPhoto(fakePhotos)
-fetch('GET','https://5f36d607.ngrok.io')
+fetch('https://5f36d607.ngrok.io/posts')
   .then(function(data) {
     return data.json()
   })
