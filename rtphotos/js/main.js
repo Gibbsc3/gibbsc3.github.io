@@ -21,12 +21,12 @@ channel.bind('image_upload', function(data) {
 
 
 
-var fakePhotos = {'image':'https://google.com', 'caption':'text'}
+// var fakePhotos = {'image':'https://google.com', 'caption':'text'}
 
-function renderPhoto(fake) {
-console.log(fake);
-}
-renderPhoto(fakePhotos)
+// function renderPhoto(fake) {
+// console.log(fake);
+// }
+// renderPhoto(fakePhotos)
 // fetch('back-end API to get list of existing photos goes here')
 //   .then(function(data) {
 //     return data.json()
