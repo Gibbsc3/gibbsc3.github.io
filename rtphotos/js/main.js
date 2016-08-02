@@ -10,10 +10,8 @@ pusher = new Pusher(apiToken, {
 // Pusher channel and event subscription
 channel = pusher.subscribe('email_image')
 channel.bind('image_upload', function(data) {
-  console.log(data)
-  console.log(data.caption)
-  console.log(data.image)
 
+renderPhoto(data)
   // Put your code here to render incoming photos
 })
 
