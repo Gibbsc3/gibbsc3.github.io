@@ -13,6 +13,7 @@ channel.bind('image_upload', function(data) {
   console.log(data)
   console.log(data.caption)
   console.log(data.image)
+
   // Put your code here to render incoming photos
 })
 
@@ -25,14 +26,24 @@ channel.bind('image_upload', function(data) {
 
 // var fakePhotos = {'image':'https://google.com', 'caption':'text'}
 
-// function renderPhoto(fake) {
-// console.log(fake);
-// }
+function renderPhoto(fake) {
+  //creates image tag
+  var img = document.createElement('img')
+  img.setAttribute('src', fake.image)
+  //creates div
+  var div = document.createElement('div')
+  div.classList.add('foo')
+
+
+  div.appendChild(img)
+console.log(fake);
+}
 // renderPhoto(fakePhotos)
-// fetch('back-end API to get list of existing photos goes here')
-//   .then(function(data) {
-//     return data.json()
-//   })
-//   .then(function(photos) {
-//     // Put your code here to render existing photos
-//   })
+fetch('GET','https://5f36d607.ngrok.io')
+  .then(function(data) {
+    return data.json()
+  })
+  .then(function(photos) {
+    // Put your code here to render existing photos
+
+  })
