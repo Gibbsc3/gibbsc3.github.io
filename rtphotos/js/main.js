@@ -36,6 +36,7 @@ function renderPhoto(fake) {
 
 
   div.appendChild(img)
+  document.body.appendChild(div);
 console.log(fake);
 }
 // renderPhoto(fakePhotos)
