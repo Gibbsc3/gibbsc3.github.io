@@ -1,0 +1,81 @@
+body {
+  background-color: #F1F0CC;
+  padding-top: 156px;
+}
+
+.img-responsive {
+  max-height: 227px !important;
+  max-width: 100% !important;
+}
+
+.img-responsive:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 7px #3F0D12;
+}
+
+.projWrap {
+  max-height: 246px !important;
+  margin-bottom: 2vh !important;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #3F0D12;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+.footer {
+  background-color: #3F0D12;
+  margin-top: 5vh;
+  color: #F1F0CC;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #F1F0CC !important;
+}
+
+.header {
+  background-color: #3F0D12;
+  color: white;
+  background-position-y: 26%;
+  background-size: cover;
+  text-shadow: 2px 2px black;
+}
+
+@media (min-width: 768px) {
+  .img-responsive {
+    max-height: 215px !important;
+  }
+  .header {
+    background-image: url("/img/tony.jpg") !important;
+    color: white;
+    background-position-y: 26%;
+    background-size: cover;
+    text-shadow: 2px 2px black;
+    height: 113px;
+  }
+}
+
+@media (min-width: 993px) {
+  .header {
+    background-image: url("/img/tony.jpg") !important;
+    color: white;
+    background-position-y: 26%;
+    background-size: cover;
+    text-shadow: 2px 2px black;
+    height: 136px;
+  }
+  .img-responsive {
+    max-height: 227px !important;
+    max-width: 464px !important;
+  }
+}
