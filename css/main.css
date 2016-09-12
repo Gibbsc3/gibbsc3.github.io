@@ -56,7 +56,7 @@ h4 {
     max-height: 215px !important;
   }
   .header {
-    background-image: url("/img/tony.jpg") !important;
+    background-image: url("/img/face.jpg") !important;
     color: white;
     background-position-y: 26%;
     background-size: cover;
@@ -67,7 +67,7 @@ h4 {
 
 @media (min-width: 993px) {
   .header {
-    background-image: url("/img/tony.jpg") !important;
+    background-image: url("/img/face.jpg") !important;
     color: white;
     background-position-y: 26%;
     background-size: cover;
